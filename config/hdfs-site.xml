@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+	<!--
+	  Pseudo-Distributed Mode.
+	-->
+	<property>
+		<name>dfs.blocksize</name>
+		<value>134217728</value>
+	</property>
+	<property>
+		<name>dfs.replication</name>
+		<value>1</value>
+	</property>
+	<property>
+		<name>dfs.namenode.name.dir</name>
+		<value>file:///usr/local/hadoop/hdfs/namenode</value>
+	</property>
+	<property>
+		<name>dfs.datanode.data.dir</name>
+		<value>file:///usr/local/hadoop/hdfs/datanode</value>
+	</property>
+</configuration>

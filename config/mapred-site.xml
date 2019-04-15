@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+	<!--
+	  Pseudo-Distributed Mode + YARN Setup.
+	-->
+    <property>
+       <name>mapreduce.framework.name</name>
+       <value>yarn</value>
+    </property>
+</configuration>

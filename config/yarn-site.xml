@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<configuration>
+	<!--
+	  Pseudo-Distributed Mode + YARN Setup.
+	-->
+    <property>
+       <name>yarn.nodemanager.aux-services</name>
+       <value>mapreduce_shuffle</value>
+    </property>
+    <property>
+       <name>yarn.nodemanager.aux-services.mapreduce.shuffle.class</name>
+       <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+    </property>
+	<!--
+	  Fully-Distributed Mode + YARN Setup.
+	-->
+    <property>
+        <name>yarn.resourcemanager.hostname</name>
+        <value>mycluster-master</value>
+    </property>
+
+<property>
+    <name>yarn.resourcemanager.scheduler.address</name>
+    <value>mycluster-master:8030</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.address</name>
+    <value>mycluster-master:8032</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.webapp.address</name>
+    <value>mycluster-master:8088</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.resource-tracker.address</name>
+    <value>mycluster-master:8031</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.admin.address</name>
+    <value>mycluster-master:8033</value>
+  </property>
+<property>
+   <name>yarn.nodemanager.disk-health-checker.enable</name>
+   <value>false</value>
+</property>
+<property>
+    <name>yarn.nodemanager.pmem-check-enabled</name>
+    <value>false</value>
+</property>
+
+<property>
+    <name>yarn.nodemanager.vmem-check-enabled</name>
+    <value>false</value>
+</property>
+
+
+</configuration>
