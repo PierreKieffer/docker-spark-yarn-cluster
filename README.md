@@ -25,7 +25,7 @@ You can directly pull image from docker hub
 - Access to hdfs Web UI : <container ip>:50070
   
 ## Stop 
-- `docker stop $(sudo docker ps -a -q)`
+- `docker stop $(docker ps -a -q)`
 - `docker container prune`
 
 
