@@ -23,6 +23,11 @@ You can directly pull image from docker hub
 - Access to Hadoop cluster Web UI : <container ip>:8088 
 - Access to spark Web UI : <container ip>:8080
 - Access to hdfs Web UI : <container ip>:50070
+  
+## Stop 
+- `docker stop $(sudo docker ps -a -q)`
+- `docker container prune`
+
 
 
 
