@@ -1,6 +1,5 @@
 FROM ubuntu:16.04
-ENV http_proxy http://10.66.243.130:8080
-ENV https_proxy https://10.66.243.130:8080
+
 
 USER root
 
