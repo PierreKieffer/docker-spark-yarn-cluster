@@ -8,10 +8,6 @@ This application allows to deploy multi-nodes hadoop cluster with spark 2.4.1 on
 - cd inside ../docker-spark-yarn-cluster 
 - Run `docker build -t pierrekieffer/spark-hadoop-cluster .`
 
-## Pull image 
-You can directly pull image from docker hub 
-`docker pull pierrekieffer/spark-hadoop-cluster`
-
 ## Run  
 - Run `./startHadoopCluster.sh`
 - Access to master `docker exec -it mycluster-master bash`
