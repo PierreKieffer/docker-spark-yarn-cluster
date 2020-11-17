@@ -54,9 +54,13 @@ spark-submit --master yarn --deploy-mode [client or cluster] --num-executors 2 -
 ```bash
 make master-ip
 ```
-- Access to Hadoop cluster Web UI : master-node-ip:8088 
-- Access to spark Web UI : master-node-ip:8080
-- Access to hdfs Web UI : master-node-ip:50070
+```bash
+ ---- MASTER NODE IP ---- 
+Master node ip : 172.20.0.4
+```
+- Access to Hadoop cluster Web UI : `master-node-ip:8088`
+- Access to spark Web UI : `master-node-ip:8080`
+- Access to hdfs Web UI : `master-node-ip:50070`
 
 
 
