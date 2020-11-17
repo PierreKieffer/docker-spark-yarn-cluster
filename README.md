@@ -5,8 +5,19 @@
 </p>
 
 
-## docker-spark-yarn-cluster 
-This application allows to deploy multi-nodes hadoop cluster with spark 2.4.1 on yarn. 
+Provides docker multi-nodes hadoop cluster with spark 2.4.1 on yarn. 
+
+
+* [Usage](#usage)
+	* [Build](#build)
+	* [Run](#run)
+	* [Stop](#stop)
+	* [Connect to Master Node](#connect-to-master-node)
+	* [Run spark applications on cluster :](#run-spark-applications-on-cluster-)
+		* [spark-shell](#spark-shell)
+		* [spark submit](#spark-submit)
+		* [Web UI](#web-ui)
+
 
 ## Usage 
 ### Build 
