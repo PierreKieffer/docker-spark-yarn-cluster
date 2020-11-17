@@ -6,7 +6,7 @@
 	-->
 	<property>
 	   <name>fs.defaultFS</name>
-	   <value>hdfs://mycluster-master:9000/</value>
+	   <value>hdfs://cluster-master:9000/</value>
 	</property>
 	<property>
 	   <name>io.file.buffer.size</name>

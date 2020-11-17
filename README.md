@@ -25,6 +25,10 @@ make stop
 ```bash
 make connect
 ```
+```bash
+ ---- MASTER NODE ---- 
+root@cluster-master:/#
+```
 ### Run spark applications on cluster : 
 #### spark-shell
 ```bash 
@@ -35,9 +39,13 @@ spark-shell --master yarn --deploy-mode client
 spark-submit --master yarn --deploy-mode [client or cluster] --num-executors 2 --executor-memory 4G --executor-cores 4 --class org.apache.spark.examples.SparkPi $SPARK_HOME/examples/jars/spark-examples_2.11-2.4.1.jar
 ```
 #### Web UI 
-- Access to Hadoop cluster Web UI : <container ip>:8088 
-- Access to spark Web UI : <container ip>:8080
-- Access to hdfs Web UI : <container ip>:50070
+- Get master node ip: 
+```bash
+make master-ip
+```
+- Access to Hadoop cluster Web UI : master-node-ip:8088 
+- Access to spark Web UI : master-node-ip:8080
+- Access to hdfs Web UI : master-node-ip:50070
 
 
 

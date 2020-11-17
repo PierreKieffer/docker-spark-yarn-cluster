@@ -15,4 +15,8 @@ stop :
 
 connect :
 	@echo " ---- MASTER NODE ---- "
-	@docker exec -it mycluster-master bash
+	@docker exec -it cluster-master bash
+
+master-ip : 
+	@echo " ---- MASTER NODE IP ---- "
+	@echo "Master node ip : " $(shell docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' cluster-master)

@@ -2,7 +2,7 @@
 
 # VARIABLES
 IMG_NAME="spark-hadoop-cluster"
-HOST_PREFIX="mycluster"
+HOST_PREFIX="cluster"
 NETWORK_NAME=$HOST_PREFIX
 
 N=${1:-2}
