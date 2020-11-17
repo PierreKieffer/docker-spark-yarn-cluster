@@ -5,7 +5,7 @@
 </p>
 
 
-Provides docker multi-nodes hadoop cluster with spark 2.4.1 on yarn. 
+Provides Docker multi-nodes Hadoop cluster with Spark 2.4.1 on Yarn. 
 
 
 * [Usage](#usage)
