@@ -41,6 +41,8 @@ make connect
 root@cluster-master:/#
 ```
 ### Run spark applications on cluster : 
+Once connected to the master node
+ 
 #### spark-shell
 ```bash 
 spark-shell --master yarn --deploy-mode client
