@@ -11,7 +11,8 @@ start :
 	@./startHadoopCluster.sh
 stop :
 	@echo " ---- STOP ---- "
-	@docker stop $(shell docker ps -a -q) && docker container prune -f 
+	@chmod +x stop.sh
+	@./stop.sh
 
 connect :
 	@echo " ---- MASTER NODE ---- "
